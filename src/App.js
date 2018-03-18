@@ -15,7 +15,7 @@ class QRCodeBox extends Component {
         });
     }
     
-    render() {
+    render = () => {
         let text = this.state.text;
         return (
                 <div className="qrcode_box">
@@ -27,7 +27,7 @@ class QRCodeBox extends Component {
 }
 
 class App extends Component {
-    render() {
+    render = () => {
         return (
                 <QRCodeBox value="http://facebook.github.io/" />
         );
